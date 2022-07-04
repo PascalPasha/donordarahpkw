@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/donordarah', [App\Http\Controllers\DonorDarahController::class,'index'])->name('donordarah');
 Route::post('/donordarah/create', [App\Http\Controllers\DonorDarahController::class,'create'])->name('donordarah');
 Route::get('/donordarah/{id}/edit', [App\Http\Controllers\DonorDarahController::class, 'edit'])->name('donordarah');

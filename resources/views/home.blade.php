@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <a class="btn btn-primary" href="donordarah" role="button">View Data</a>
                 </div>
             </div>
         </div>
